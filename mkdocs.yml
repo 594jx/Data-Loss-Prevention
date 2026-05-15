@@ -1,0 +1,45 @@
+
+# theme:
+#   name: dracula
+
+site_name: Data Loss Prevention
+# site_description: Internship project sharing on GenAI risk detection and analytics workflow
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: deep purple
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.mark
+
+plugins:
+  - search
+  - mermaid2
+
+extra_css:
+  - stylesheets/extra.css
+  
+nav:
+  - Introduction: index.md
+  - Solution Framework: Framework.md
+  - Reflection: Reflection.md
